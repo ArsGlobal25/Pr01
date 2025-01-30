@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 80%;
+  margin: 40px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+h1, h2 {
+  color: #00ffff;
+  text-align: center;
+}
+
+/* Hero Styles */
+.hero {
+  background-image: url('https://via.placeholder.com/1920x1080');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  font-size: 3em;
+  text-shadow: 0 0 20px #00ffff;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* Courses Styles */
+.courses .course-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.course-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.course-item h3 {
+  color: #00ffff;
+}
+
+/* Testimonials Styles */
+.testimonial-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonial-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.testimonial-item p {
+  color: #ffffff;
+}
+
+/* About Us Styles */
+.about-us {
+  text-align: center;
+}
+
+/* Contact Styles */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact label {
+  margin-bottom: 5px;
+  color: #00ffff;
+}
+
+.contact input, .contact textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.contact button {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #00ffff;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #00ccff;
+}
+
+/* Holographic Button Styles */
+.holographic-button {
+  position: relative;
+  padding: 15px 30px;
+  border-radius: 25px;
+  background-color: rgba(0, 255, 255, 0.3);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.holographic-button::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background-color: rgba(0, 255, 255, 0.3);
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+
+.holographic-button:hover::before {
+  top: 100%;
+  left: 100%;
+}
